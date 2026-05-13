@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="author" content="Kent Blanco">
+		<meta name="description" content="The Leprechaun Inn">
+		<meta name="keywords" content="pub, athlone, drinks, westmeath, alcohol, bar, The Leprechaun Inn">
+		<meta name="copyright" content="2023">
+		<title>The Leprechaun Inn</title>
+		<link type="text/css" rel="stylesheet" href="../mystyles.css" title="Stylesheet">
+		<link rel="icon" type="image/x-icon" href="../images/banner.png">
+	</head>
+	<body>
+    <div id="container">
+		<div class="header"> <img src="../images/banner.png" alt="Image of Leprechaun Inn Banner" title="The Leprechaun Inn" style="width: 366px; height: 309px;" class="center"> </div>
+      <div class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a><br>
+        </li>
+          <li><a href="products.html">Merchandise</a><br>
+          </li>
+		  <li><a href="music.html">Music & Events</a><br>
+          </li>
+		  <li><a class="active" href="gallery.html">Gallery</a><br>
+          </li>
+		  <li><a href="contact.html">Contact Us</a><br>
+          </li>
+        </ul>
+      </div>
+	  
+	 <h2 style="font-family:Monotype Corsiva">GALLERY</h2>
+	 
+	 <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 12</div>
+  <img src="../images/pub1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 12</div>
+  <img src="../images/pub2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 12</div>
+  <img src="../images/pub3.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 12</div>
+  <img src="../images/pub4.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 12</div>
+  <img src="../images/pub5.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 12</div>
+  <img src="../images/pub6.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 12</div>
+  <img src="../images/pub7.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 12</div>
+  <img src="../images/pub8.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 12</div>
+  <img src="../images/pub9.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 12</div>
+  <img src="../images/pub10.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">11 / 12</div>
+  <img src="../images/pub11.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">12 / 12</div>
+  <img src="../images/pub12.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+	 
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+	 
+	 
+	 <div class="gall">
+	 <div class="row">
+    <a href="index.html"><img src="../images/pub1.jpg" alt="image of the pub" width="300" height="200"></a>
+	<img src="../images/pub2.jpg" alt="image of the pub" width="300" height="200">
+	<img src="../images/pub3.jpg" alt="image of the pub" width="300" height="200">
+</div>
+
+<div class="row">
+<img src="../images/pub4.jpg" alt="image of the pub" width="300" height="200">
+	<img src="../images/pub5.jpg" alt="image of the pub" width="300" height="200">
+	<img src="../images/pub6.jpg" alt="image of the pub" width="300" height="200">
+</div>
+
+<div class="row">
+<img src="../images/pub7.jpg" alt="image of the pub" width="300" height="200">
+	<img src="../images/pub8.jpg" alt="image of the pub" width="300" height="200">
+	<img src="../images/pub9.jpg" alt="image of the pub" width="300" height="200">
+</div>
+
+<div class="row">
+<img src="../images/pub10.jpg" alt="image of the pub" width="300" height="200">
+	<img src="../images/pub11.jpg" alt="image of the pub" width="300" height="200">
+	<img src="../images/pub12.jpg" alt="image of the pub" width="300" height="200">
+</div>
+</div>
+
+<br>
+	
+
+
+
+	
+	<div class="footer"> <img src="../images/em.png" alt="image of email icon" height="25px"
+
+          width="25px">leprechauninn@info.ie | <img src="../images/loc.png" alt="image of location icon"		  height="25px"
+
+          width="25px">Athlone, Co Westmeath | <img src="../images/phone.png" alt="image of phone icon" height="25px"
+
+          width="25px"> +353 12 321 3454 </div>
+	
+	</div>
+	</body>
+	
+
+</html>
